@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Alkatra;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 30px 20px 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+ul{
+  list-style: none;
+  display: flex;
+}
+a{
+  padding-inline: 50px;
+  text-decoration: none;
+  color: rgb(64, 64, 64);
+}
+a:hover{
+    color: rgb(7, 152, 255);
+    cursor: pointer;
+}
+.nav .icon{
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-brand {
+    order: 1;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+    width: 100%;
+  }
+
+  .nav ul.show {
+    display: flex;
+  }
+
+  .nav li {
+    margin: 10px 10px;
+  }
+
+  .nav .icon {
+    display: block;
+    order: 2;
+    cursor: pointer;
+    color: rgb(64, 64, 64);
+    font-size: 1.6rem;
+  }
+}
+
+.title{
+    justify-content: start;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(7, 152, 255);
+    font-size: 35px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .search input[type="text"] {
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 1px 5px rgba(7,152,255);
+    color: rgba(7,152,255);
+  }
+  
+  .search button[type="submit"] {
+    border: none;
+    color: rgb(7, 152, 255);
+    background-color: rgb(64, 64, 64);
+    padding: 14px 24px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .search button[type="submit"]:hover {
+    background-color: rgb(7, 152, 255);
+    color: rgb(255, 255, 255);
+    padding: 14px 24px;
+    border-radius: 5px;
+  }
+  .jobcontainer {
+    padding: 50px;
+    align-items: center;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  #jobtitle {
+    font-size: 30px;
+    color:rgb(7, 152, 255);
+  }
+  .card {
+    width: 260px;
+    box-shadow: 0 4px 8px 0 rgb(7, 152, 255);
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 12px;
+    display: grid;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(65, 65, 65, 0.95);
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .location {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: darkgray;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    font-family: Arial, Helvetica,;
+  }
+  
+  .card button {
+    background-color: rgb(64, 64, 64);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Alkatra;
+    width: 100%;
+  }
+  
+  .card button:hover {
+    background-color: rgb(7, 152, 255);;
+    color: #fff;
+  }
