@@ -164,3 +164,15 @@ a:hover{
     background-color: rgb(7, 152, 255);;
     color: #fff;
   }
+  .foot {
+    background-color: rgb(64, 64, 64);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    position: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 5%;
+  }
